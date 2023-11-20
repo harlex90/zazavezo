@@ -1,22 +1,22 @@
-import enveloppe from "../assets/enveloppe.png";
-import telephone from "../assets/telephone.png";
-import instagram_logo from "../assets/instagram_logo.png";
-import facebookF from "../assets/facebookF.png";
-import beloboatCropped from "../assets/beloboatCropped.jpg";
+import emailIcon from "../assets/emailIcon.png";
+import telephoneIcon from "../assets/telephoneIcon.png";
+import instagramIcon from "../assets/instagramIcon.png";
+import facebookIcon from "../assets/facebookIcon.png";
+import beloboatTry2 from "../assets/beloboatTry2.jpg";
 import assochildren from "../assets/assochildren.jpg";
 
 
 const TitleAndCaption = () => {
     return(
-        <div style={{display: "flex", flexDirection: "column", gap: "10px"}}>
+        <div style={{display: "flex", flexDirection: "column", gap: "6px"}}>
             <div>
-                <span style={{fontSize: "5rem", fontWeight:"normal", opacity: "0.9"}}>
+                <span style={{fontSize: "6rem", fontWeight:"normal", opacity: "0.9"}}>
                     <span style={{color: "red"}}>ZAZA</span>
                     <span style={{color: "green"}}>VEZO</span>
                 </span>
             </div>
-            <div style={{display: "flex", flexDirection: "column", gap: "40px", color: "#01021A"}}>
-                <h3 style={{padding: 0, margin: 0, fontWeight:"normal"}}>Bienvenue sur le site de notre association !</h3>
+            <div style={{display: "flex", flexDirection: "column", gap: "30px", color: "#01021A"}}>
+                <h3 style={{padding: 0, margin: 0, fontWeight:"bold"}}>Bienvenue sur le site de notre association !</h3>
                 <h4 style={{padding: 0, margin: 0, fontWeight:"normal"}}>L'association Zazavezo oeuvre en faveur des enfants de l'île de Belo-sur-Mer à Madagascar</h4>
             </div>
         </div>
@@ -41,31 +41,41 @@ const DisplayNavbar = () => {
     </li>
     );
     return(
-        <div style={{backgroundImage: `url(${beloboatCropped})`, backgroundSize: "100% 900px", backgroundRepeat: "no-repeat", height: "1200px", backgroundColor: "#EADDDD"}}> 
-            <nav>
-                <ul style={{display: "flex", justifyContent: "center", listStyleType: "none", margin: 0, padding: 0, backgroundColor: "#EADDDD", width: "100%", height: "90px", gap: "90px", alignItems: "center"}}>
-                    {listNavElements}
-                </ul>
-            </nav>
-            <div style={{display: "flex", height: "87%", alignItems: "end", gap: "170px"}}>
+        <nav>
+            <ul style={{display: "flex", justifyContent: "center", listStyleType: "none", margin: 0, padding: 0, backgroundColor: "#EADDDD", width: "100%", height: "90px", gap: "90px", alignItems: "center"}}>
+                {listNavElements}
+            </ul>
+        </nav>
+            
+    
+    )
+    
+}
+
+const HomepageBackground = () => {
+    return(
+        <div style={{display: "flex", flexGrow: 1, backgroundImage: `url(${beloboatTry2})`, backgroundSize: "100% 70%", backgroundRepeat: "no-repeat", backgroundColor: "#EADDDD"}}> 
+
+            <div style={{display: "flex", alignItems: "end", gap: "110px", marginLeft: "55px", marginBottom: "30px"}}>
                 <img
                     src={assochildren}
                     alt={"Belo picture"}
-                    style={{ width: "580px", height: "auto", border: '1px solid #E9D2D2', marginLeft: "45px"}}
+                    style={{ width: "25%", height: "auto", border: '1px solid #E9D2D2'}}
                 />
+        
                 <TitleAndCaption/>
             </div>
         </div>
-    
+        
     )
 }
 
 const DisplayFooter = () => {
     
-    const footerElements = [{title: "Telephone", id: 1, icon: telephone, link: "#telephone"},
-                            {title: "Email", id: 2, icon: enveloppe, link: "#email"},
-                            {title: "Facebook", id: 3, icon: facebookF, link: "#facebook"},
-                            {title: "Instagram", id: 4, icon: instagram_logo, link: "#instagram"}]
+    const footerElements = [{title: "Email", id: 2, icon: emailIcon, link: "#email"},
+                            {title: "Telephone", id: 1, icon: telephoneIcon, link: "#telephone"},
+                            {title: "Facebook", id: 3, icon: facebookIcon, link: "#facebook"},
+                            {title: "Instagram", id: 4, icon: instagramIcon, link: "#instagram"}]
 
     const listFooterElements = footerElements.map(element =>
     <li key={element.id}>
@@ -78,15 +88,15 @@ const DisplayFooter = () => {
     );
     return(
             
-        <div style={{backgroundColor: "#BD894C", width: "100%", height: "200px"}}>
+        <div style={{backgroundColor: "#BD894C", width: "100%", height: "20%"}}>
             <div style={{display: "flex", justifyContent: "center"}}>
-                <h4 style={{color: "#01021A", marginTop: "10px", letterSpacing: "20px"}}>CONTACT</h4>
+                <h4 style={{color: "#01021A", marginTop: "10px", letterSpacing: "25px", paddingLeft: "25px", marginBottom: "10px"}}>CONTACT</h4>
             </div>
-            <ul style={{display: "flex", justifyContent: "center", listStyleType: "none", margin: 0, padding: 0}}>
+            <ul style={{display: "flex", justifyContent: "center", listStyleType: "none", padding: 0, marginBottom: "20px", gap: "30px"}}>
                 {listFooterElements}
             </ul>
-            <div style={{display: "flex", justifyContent: "center", height: "45%", alignItems: "end"}}>
-                <h4 style={{fontWeight: "normal", color: "#01021A", margin: 0, padding: 0}}>ZAZAVEZO</h4>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <h4 style={{fontWeight: "normal", color: "#01021A", margin: 0, paddingBottom: "5px"}}>ZAZAVEZO</h4>
             </div>
         </div>
 
@@ -96,12 +106,9 @@ const DisplayFooter = () => {
 const Entete = () => {
     return(
         <div style={{display: "flex", flexDirection: "column", minHeight: "100vh"}}>
-           <div style={{flexGrow: 1}}> 
-                <DisplayNavbar/>
-            </div>
-                
+            <DisplayNavbar/>
+            <HomepageBackground/>
             <DisplayFooter/>
-            
         </div>
     )
 }
