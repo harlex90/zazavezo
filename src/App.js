@@ -1,6 +1,25 @@
-import logo from './logo.svg';
+import {
+  Route,
+  BrowserRouter,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import './App.css';
 import Entete from './components/Entete';
+import Objectifs from "./components/Objectifs";
+
+function Router() { 
+  return (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="/home" element={<Entete />} />
+      <Route path="/objectifs" element={<Objectifs/>}/>
+    </Routes>
+  </BrowserRouter>
+  )
+}
+
 
 
 
@@ -9,7 +28,7 @@ import Entete from './components/Entete';
 
 function App() {
   return (
-    <Entete/>
+    <Router />
   );
 }
 

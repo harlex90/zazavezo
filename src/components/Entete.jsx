@@ -4,6 +4,7 @@ import instagramIcon from "../assets/instagramIcon.png";
 import facebookIcon from "../assets/facebookIcon.png";
 import beloboatTry2 from "../assets/beloboatTry2.jpg";
 import assochildren from "../assets/assochildren.jpg";
+import { Link } from "react-router-dom";
 
 
 const TitleAndCaption = () => {
@@ -27,17 +28,17 @@ const TitleAndCaption = () => {
 
 const DisplayNavbar = () => {
 
-    const navElements = [{title: "Accueil", id: 1, link: "#home"}, 
-                        {title: "Objectifs", id: 2, link: "#objectifs"}, 
-                        {title:"Réalisations", id: 3, link:"#realisations"},
-                        {title: "Devenir adhérent(e)/Contribuer", id: 4, link: "#contribuer"},
-                        {title: "A propos", id: 5, link: "#apropos"}]
+    const navElements = [{title: "Accueil", id: 1, link: "/home"}, 
+                        {title: "Objectifs", id: 2, link: "/objectifs"}, 
+                        {title:"Réalisations", id: 3, link:"/realisations"},
+                        {title: "Devenir adhérent(e)/Contribuer", id: 4, link: "/contribuer"},
+                        {title: "A propos", id: 5, link: "/apropos"}]
 
     const listNavElements = navElements.map(element =>
     <li key={element.id}>
-        <a style={{display: "flex", color: "#01021A", textDecoration: "none", fontWeight: "bold"}} to={element.link}>
+        <Link to={element.link} style={{display: "flex", color: "#01021A", textDecoration: "none", fontWeight: "bold"}}>
             {element.title}
-        </a>
+        </Link>
     </li>
     );
     return(
