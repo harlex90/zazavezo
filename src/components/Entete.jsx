@@ -1,10 +1,7 @@
-import emailIcon from "../assets/emailIcon.png";
-import telephoneIcon from "../assets/telephoneIcon.png";
-import instagramIcon from "../assets/instagramIcon.png";
-import facebookIcon from "../assets/facebookIcon.png";
 import beloboatTry2 from "../assets/beloboatTry2.jpg";
 import assochildren from "../assets/assochildren.jpg";
-import { Link } from "react-router-dom";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 
 const TitleAndCaption = () => {
@@ -26,34 +23,9 @@ const TitleAndCaption = () => {
 
 
 
-const DisplayNavbar = () => {
 
-    const navElements = [{title: "Accueil", id: 1, link: "/home"}, 
-                        {title: "Objectifs", id: 2, link: "/objectifs"}, 
-                        {title:"Réalisations", id: 3, link:"/realisations"},
-                        {title: "Devenir adhérent(e)/Contribuer", id: 4, link: "/contribuer"},
-                        {title: "A propos", id: 5, link: "/apropos"}]
 
-    const listNavElements = navElements.map(element =>
-    <li key={element.id}>
-        <Link to={element.link} style={{display: "flex", color: "#01021A", textDecoration: "none", fontWeight: "bold"}}>
-            {element.title}
-        </Link>
-    </li>
-    );
-    return(
-        <nav>
-            <ul style={{display: "flex", justifyContent: "center", listStyleType: "none", margin: 0, padding: 0, backgroundColor: "#EADDDD", width: "100%", height: "90px", gap: "90px", alignItems: "center"}}>
-                {listNavElements}
-            </ul>
-        </nav>
-            
-    
-    )
-    
-}
-
-const HomepageBackground = () => {
+const Homepage = () => {
     return(
         <div style={{display: "flex", flexGrow: 1, backgroundImage: `url(${beloboatTry2})`, backgroundSize: "100% 70%", backgroundRepeat: "no-repeat", backgroundColor: "#EADDDD"}}> 
 
@@ -71,45 +43,13 @@ const HomepageBackground = () => {
     )
 }
 
-const DisplayFooter = () => {
-    
-    const footerElements = [{title: "Email", id: 2, icon: emailIcon, link: "#email"},
-                            {title: "Telephone", id: 1, icon: telephoneIcon, link: "#telephone"},
-                            {title: "Facebook", id: 3, icon: facebookIcon, link: "#facebook"},
-                            {title: "Instagram", id: 4, icon: instagramIcon, link: "#instagram"}]
-
-    const listFooterElements = footerElements.map(element =>
-    <li key={element.id}>
-        <img 
-            src={element.icon}
-            alt="icon element"
-            style={{display: "flex", textDecoration: "none", width: "50px", height: "auto"}}
-        />
-    </li>
-    );
-    return(
-            
-        <div style={{backgroundColor: "#BD894C", width: "100%", height: "20%"}}>
-            <div style={{display: "flex", justifyContent: "center"}}>
-                <h4 style={{color: "#01021A", marginTop: "10px", letterSpacing: "25px", paddingLeft: "25px", marginBottom: "10px"}}>CONTACT</h4>
-            </div>
-            <ul style={{display: "flex", justifyContent: "center", listStyleType: "none", padding: 0, marginBottom: "20px", gap: "30px"}}>
-                {listFooterElements}
-            </ul>
-            <div style={{display: "flex", justifyContent: "center"}}>
-                <h4 style={{fontWeight: "normal", color: "#01021A", margin: 0, paddingBottom: "5px"}}>ZAZAVEZO</h4>
-            </div>
-        </div>
-
-    )
-}
 
 const Entete = () => {
     return(
         <div style={{display: "flex", flexDirection: "column", minHeight: "100vh"}}>
-            <DisplayNavbar/>
-            <HomepageBackground/>
-            <DisplayFooter/>
+            <Navbar/>
+            <Homepage/>
+            <Footer/>
         </div>
     )
 }
