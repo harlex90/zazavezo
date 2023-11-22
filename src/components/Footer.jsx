@@ -15,7 +15,7 @@ const Footer = () => {
         <img 
             src={element.icon}
             alt="icon element"
-            style={{display: "flex", textDecoration: "none", width: "50px", height: "auto"}}
+            className="flex no-underline w-12 h-auto"
         />
     </li>
     );
@@ -23,12 +23,12 @@ const Footer = () => {
             
         <div style={{backgroundColor: "#BD894C", width: "100%", height: "20%"}}>
             <div style={{display: "flex", justifyContent: "center"}}>
-                <h4 style={{color: "#01021A", marginTop: "10px", letterSpacing: "25px", paddingLeft: "25px", marginBottom: "10px"}}>CONTACT</h4>
+                <h4 className="mt-2.5 tracking-[25px] text-[#01021A] pl-6 mb-2.5">CONTACT</h4>
             </div>
-            <ul style={{display: "flex", justifyContent: "center", listStyleType: "none", padding: 0, marginBottom: "20px", gap: "30px"}}>
+            <ul className="flex justify-center list-none p-0 mb-5 gap-7">
                 {listFooterElements}
             </ul>
-            <div style={{display: "flex", justifyContent: "center"}}>
+            <div className="flex justify-center">
                 <h4 style={{fontWeight: "normal", color: "#01021A", margin: 0, paddingBottom: "5px"}}>ZAZAVEZO</h4>
             </div>
         </div>
