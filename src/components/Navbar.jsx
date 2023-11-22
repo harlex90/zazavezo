@@ -10,14 +10,14 @@ const Navbar = () => {
 
     const listNavElements = navElements.map(element =>
     <li key={element.id}>
-        <Link to={element.link} style={{display: "flex", color: "#01021A", textDecoration: "none", fontWeight: "bold"}}>
+        <Link to={element.link} className="flex no-underline font-bold text-[#01021A]">
             {element.title}
         </Link>
     </li>
     );
     return(
         <nav>
-            <ul style={{display: "flex", justifyContent: "center", listStyleType: "none", margin: 0, padding: 0, backgroundColor: "#EADDDD", width: "100%", height: "90px", gap: "90px", alignItems: "center"}}>
+            <ul className="flex justify-center list-none m-0 p-0 w-full h-24 gap-24 items-center bg-[#EADDDD]">
                 {listNavElements}
             </ul>
         </nav>
