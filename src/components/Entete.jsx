@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 const TitleAndCaption = () => {
     return(
-        <div style={{display: "flex", flexDirection: "column", gap: "6px"}}>
+        <div className="flex flex-col gap-1.5">
             <div>
                 <span style={{fontSize: "6rem", fontWeight:"normal", opacity: "0.9"}}>
                     <span style={{color: "red"}}>ZAZA</span>
@@ -22,13 +22,9 @@ const TitleAndCaption = () => {
 }
 
 
-
-
-
 const Homepage = () => {
     return(
-        <div style={{display: "flex", flexGrow: 1, backgroundImage: `url(${beloboatTry2})`, backgroundSize: "100% 70%", backgroundRepeat: "no-repeat", backgroundColor: "#EADDDD"}}> 
-
+        <div className="flex flex-1 bg-no-repeat bg-right-top bg-[#EADDDD]" style={{backgroundImage: `url(${beloboatTry2})`}}> 
             <div style={{display: "flex", alignItems: "end", gap: "110px", marginLeft: "55px", marginBottom: "30px"}}>
                 <img
                     src={assochildren}
@@ -46,7 +42,7 @@ const Homepage = () => {
 
 const Entete = () => {
     return(
-        <div style={{display: "flex", flexDirection: "column", minHeight: "100vh"}}>
+        <div className="flex flex-col min-h-screen">
             <Navbar/>
             <Homepage/>
             <Footer/>
