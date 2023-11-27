@@ -5,7 +5,7 @@ import beloboat from "../assets/beloboat.jpg";
 
 const Content = () => {
     return(
-        <div className="grow bg-no-repeat bg-cover" style={{flexGrow: 1, backgroundImage: `url(${beloboat})`, backgroundPosition: "40% 70%", opacity: "0.5"}}>
+        <div className="grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)] opacity-50" style={{backgroundImage: `url(${beloboat})`}}>
             <div>
                 <h1>RÉALISATIONS</h1>
             </div>

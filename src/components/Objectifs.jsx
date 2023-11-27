@@ -5,7 +5,7 @@ import beloboat from "../assets/beloboat.jpg";
 
 const Content = () => {
     return(
-        <div style={{flexGrow: 1, backgroundImage: `url(${beloboat})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "40% 70%", opacity: "0.5"}}>
+        <div className="grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)] opacity-50" style={{backgroundImage: `url(${beloboat})`}}>
             <div>
                 <h1>OBJECTIFS</h1>
                 <h3>Les objectifs de l’association:</h3>
@@ -28,7 +28,7 @@ const Content = () => {
 
 const Objectifs = () => {
     return(
-        <div style={{display: "flex", flexDirection: "column", minHeight: "100vh"}}>
+        <div className="flex flex-col min-h-screen">
             <Navbar/>
             <Content/>
             <Footer/>
