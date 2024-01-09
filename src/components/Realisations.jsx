@@ -1,13 +1,13 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import beloboat from "../assets/beloboat.jpg";
+import beloboatOP from "../assets/beloboatOP.jpg";
 import bibliotheque from "../assets/bibliotheque.jpg";
 import construction from "../assets/construction.jpg";
 
 
 const Content = () => {
     return(
-        <div className="flex flex-col grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)] opacity-50" style={{backgroundImage: `url(${beloboat})`}}>
+        <div className="flex flex-col grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)]" style={{backgroundImage: `url(${beloboatOP})`}}>
             <div className=" flex justify-center m-[50px]">
                 <h1>RÉALISATIONS</h1>
             </div>
