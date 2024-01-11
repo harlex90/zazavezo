@@ -2,21 +2,27 @@ import emailIcon from "../assets/emailIcon.png";
 import telephoneIcon from "../assets/telephoneIcon.png";
 import instagramIcon from "../assets/instagramIcon.png";
 import facebookIcon from "../assets/facebookIcon.png";
+import { Link } from "react-router-dom";
+
+
+
 
 const Footer = () => {
     
-    const footerElements = [{title: "Email", id: 2, icon: emailIcon, link: "#email"},
+    const footerElements = [{title: "Email", id: 2, icon: emailIcon, link: "mailto:associationzazavezo@gmail.com"},
                             {title: "Telephone", id: 1, icon: telephoneIcon, link: "#telephone"},
                             {title: "Facebook", id: 3, icon: facebookIcon, link: "#facebook"},
                             {title: "Instagram", id: 4, icon: instagramIcon, link: "#instagram"}]
 
     const listFooterElements = footerElements.map(element =>
     <li key={element.id}>
-        <img 
-            src={element.icon}
-            alt="icon element"
-            className="flex no-underline w-12 h-auto"
-        />
+        <Link to={element.link}>
+            <img 
+                src={element.icon}
+                alt="icon element"
+                className="flex no-underline w-12 h-auto"
+            />
+        </Link>
     </li>
     );
     return(

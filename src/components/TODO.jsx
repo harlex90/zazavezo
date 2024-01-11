@@ -1,3 +1,3 @@
-// Make the onglets turn into links
-// Fill all the onglet pages
 // Links footer icons
+// Pictures on A propos page
+// Page Contribuer

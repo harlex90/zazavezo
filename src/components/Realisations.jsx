@@ -9,11 +9,11 @@ const Content = () => {
     return(
         <div className="flex flex-col grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)]" style={{backgroundImage: `url(${beloboatOP})`}}>
             <div className=" flex justify-center m-[50px]">
-                <h1>RÉALISATIONS</h1>
+                <h1>NOS RÉALISATIONS</h1>
             </div>
-            <div className="flex flex-col gap-8">
-                <div className="flex justify-around items-center">
-                    <ul className="list-disc px-6 w-1/2">
+            <div className="flex flex-col">
+                <div className="flex justify-center items-center">
+                    <ul className="list-disc w-1/2">
                         <li>1 école primaire publique (EPP) de Grande section maternelle au Cours moyen seconde année,
                             Au total près de 500 enfants dont 30 en maternelle.</li>
 
@@ -30,13 +30,13 @@ const Content = () => {
                         style={{ display: "flex", width: "20%", height: "auto", border: '1px solid #E9D2D2'}}
                     />
                 </div>
-                <div className="flex justify-around items-center">
+                <div className="flex justify-center items-center gap-11">
                     <img
                         src={construction}
                         alt={"Belo picture"}
                         style={{ display: "flex", width: "20%", height: "auto", border: '1px solid #E9D2D2'}}
                     />
-                    <ul className="list-disc px-6 w-1/2">
+                    <ul className="list-disc w-1/2">
                         <li>Un éducateur a été recruté auprès du Cisco (équivalent de notre éducation nationale)</li>
                         <li>Entre le 8 juin et le 24 juin la clôture, la case et les toilettes ont été réalisées</li>
                         <li>Création d’un potager</li>

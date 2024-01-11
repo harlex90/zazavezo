@@ -12,7 +12,17 @@ const Content = () => {
                 <h1>Devenir adhérent(e):</h1>
             </div>
             <div>
+                <button>
+                    Adhérer
+                </button>
+            </div>
+            <div>
                 <h1>Contribuer:</h1>
+            </div>
+            <div>
+                <button>
+                    Contribuer
+                </button>
             </div>
         </div>
     )
