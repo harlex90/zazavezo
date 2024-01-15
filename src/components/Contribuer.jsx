@@ -9,19 +9,23 @@ const Content = () => {
                 <h3>Vous pouvez devenir adhérent(e) ou faire un don en ligne via la plateforme HelloAsso:</h3>
             </div>
             <div>
-                <h1>Devenir adhérent(e):</h1>
+                <h1>DEVENIR ADHÉRENT(E):</h1>
             </div>
-            <div>
-                <button>
-                    Adhérer
+            <div className="m-[80px]">
+                <button className="flex border border-green-700 rounded gap-4 items-center">
+                    <div className="flex bg-green-500 hover:bg-green-700 text-white font-bold px-8 py-4">
+                        Adhérer
+                    </div> 
                 </button>
             </div>
             <div>
-                <h1>Contribuer:</h1>
+                <h1>CONTRIBUER:</h1>
             </div>
-            <div>
-                <button>
-                    Contribuer
+            <div className="m-[80px]">
+                <button className="flex border border-green-700 rounded gap-4 items-center">
+                    <div className="flex bg-blue-500 hover:bg-blue-700 text-white font-bold px-8 py-4">
+                        Contribuer
+                    </div> 
                 </button>
             </div>
         </div>

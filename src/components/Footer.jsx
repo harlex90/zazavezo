@@ -8,10 +8,11 @@ import { Link } from "react-router-dom";
 
 
 const Footer = () => {
+
     
     const footerElements = [{title: "Email", id: 2, icon: emailIcon, link: "mailto:associationzazavezo@gmail.com"},
-                            {title: "Telephone", id: 1, icon: telephoneIcon, link: "#telephone"},
-                            {title: "Facebook", id: 3, icon: facebookIcon, link: "#facebook"},
+                            {title: "Telephone", id: 1, icon: telephoneIcon, link: "/phonepopup"},
+                            {title: "Facebook", id: 3, icon: facebookIcon, link: "https://www.facebook.com/zaza.vezo.12?locale=fr_FR"},
                             {title: "Instagram", id: 4, icon: instagramIcon, link: "#instagram"}]
 
     const listFooterElements = footerElements.map(element =>
@@ -27,8 +28,8 @@ const Footer = () => {
     );
     return(
             
-        <div style={{backgroundColor: "#BD894C", width: "100%", height: "20%"}}>
-            <div style={{display: "flex", justifyContent: "center"}}>
+        <div className="bg-[#BD894C] w-full relative"style={{height: "20%"}}>
+            <div className="flex justify-center">
                 <h4 className="mt-2.5 tracking-[25px] text-[#01021A] pl-6 mb-2.5">CONTACT</h4>
             </div>
             <ul className="flex justify-center list-none p-0 mb-5 gap-7">
