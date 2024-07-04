@@ -39,7 +39,8 @@ const Content = () => {
                     <ul className="list-disc w-1/2">
                         <li>Un éducateur a été recruté auprès du Cisco (équivalent de notre éducation nationale)</li>
                         <li>Entre le 8 juin et le 24 juin la clôture, la case et les toilettes ont été réalisées</li>
-                        <li>Création d’un potager</li>
+                        <li>Création d’un potager: cocos et graines diverses (don de Kokopelli France)</li>
+                        <li>Achat d'un four solaire pour les ateliers cuisine et broderie</li>
                         <li>Chaque enfant reçoit le matériel nécessaire pour sa scolarité 
                             (cahier, crayon, gomme, pochette de crayons de couleurs, taille-crayon, règle)</li>
                         <li>Chaque vendredi 1 sachet 30 g de lessive +1 savon est distribué à chacun des 

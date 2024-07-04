@@ -1,3 +1,3 @@
 // Links footer icons
 // Pictures on A propos page
-// Page Contribuer
+// Links buttons (adhérer, contribuer, faire un don)

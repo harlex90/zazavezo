@@ -17,8 +17,8 @@ const Content = () => {
                     <ul className="list-disc w-1/2">
                         <li className="mb-5">Concrétiser les droits de l’enfant et améliorer les conditions de vie des plus défavorisés</li>
                         <li className="mb-5">Assurer la scolarisation régulière et durable des orphelins du village</li>
-                        <li className="mb-5">Former les enseignants aux pédagogies </li>
-                        <li className="mb-5">Réduire l’extrême pauvreté par le biais d’activités génératrice de revenus</li>
+                        <li className="mb-5">Former les enseignants aux pédagogies actives </li>
+                        <li className="mb-5">Réduire l’extrême pauvreté par le biais d’activités génératrices de revenus</li>
                     </ul>
                     <img
                         src={poissons}
@@ -35,7 +35,7 @@ const Content = () => {
                     <ul className="list-disc w-1/2">
                         <li className="mb-5">Rendre les femmes autonomes économiquement par l’alphabétisation en langue locale et en français</li>
                         <li className="mb-5">Renforcer les compétences techniques des femmes afin d’obtenir une production de meilleure qualité et d’assurer la securité alimentaire de leurs enfants.</li>
-                        <li className="mb-5">Leur donner les moyens d’agir plus facilement dans leur environnement , en leur apprenant à transcrire, à lire, calculer et les doter de capacités à gérer leur quotidien en vue d’une bonne gouvernance (démocratie, transparence, lutte contre la pauvreté ….)</li>
+                        <li className="mb-5">Leur donner les moyens d’agir plus facilement dans leur environnement , en leur apprenant à transcrire, lire, calculer et les doter de capacités à gérer leur quotidien en vue d’une bonne gouvernance (démocratie, transparence, lutte contre la pauvreté ….)</li>
                         <li className="mb-5">Sensibiliser les jeunes à la préservation de l’environnement afin de réduire les effets de la pollution.</li>
                     </ul>
                 </div>

@@ -12,21 +12,13 @@ const Content = () => {
                 <h1>DEVENIR ADHÉRENT(E):</h1>
             </div>
             <div className="m-[80px]">
-                <button className="flex border border-green-700 rounded gap-4 items-center">
-                    <div className="flex bg-green-500 hover:bg-green-700 text-white font-bold px-8 py-4">
-                        Adhérer
-                    </div> 
-                </button>
+                <iframe id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/association-zaza-vezo/adhesions/association-zaza-vezo/widget-bouton" style={{width: "100%", height: "70px", border: "none", color: "blue"}}></iframe>
             </div>
             <div>
                 <h1>CONTRIBUER:</h1>
             </div>
             <div className="m-[80px]">
-                <button className="flex border border-green-700 rounded gap-4 items-center">
-                    <div className="flex bg-blue-500 hover:bg-blue-700 text-white font-bold px-8 py-4">
-                        Contribuer
-                    </div> 
-                </button>
+                <iframe id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/association-zaza-vezo/formulaires/3/widget-bouton" style={{width: "100%", height: "70px", border: "none"}}></iframe>
             </div>
         </div>
     )

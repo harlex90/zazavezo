@@ -10,14 +10,14 @@ const Navbar = () => {
 
     const listNavElements = navElements.map(element =>
     <li key={element.id}>
-        <Link to={element.link} className="flex no-underline hover:underline font-bold text-[#01021A]">
+        <Link to={element.link} className="flex no-underline hover:underline font-bold text-[#01021A] text-center">
             {element.title}
         </Link>
     </li>
     );
     return(
         <nav>
-            <ul className="flex justify-center list-none m-0 p-0 w-full h-24 gap-24 items-center bg-[#EADDDD]">
+            <ul className="flex flex-col md:flex-row justify-center list-none p-0 w-full h-fit md:h-24 gap-2 md:gap-6 lg:gap-24 items-center bg-[#EADDDD]">
                 {listNavElements}
             </ul>
         </nav>

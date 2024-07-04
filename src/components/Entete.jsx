@@ -16,7 +16,7 @@ const TitleAndCaption = () => {
                 </div>
                 <div style={{display: "flex", flexDirection: "column", gap: "30px", color: "#01021A"}}>
                     <h3 style={{padding: 0, margin: 0, fontWeight:"bold"}}>Bienvenue sur le site de notre association !</h3>
-                    <h4 style={{padding: 0, margin: 0, fontWeight:"normal"}}>L'association Zazavezo oeuvre en faveur des enfants de l'île de Belo-sur-Mer à Madagascar</h4>
+                    <h4 style={{padding: 0, margin: 0, fontWeight:"normal"}}>L'association Zazavezo oeuvre en faveur des enfants de l'île de Belo-sur-Mer, à Madagascar.</h4>
                 </div>
             </div>
             <div className="flex items-center">
@@ -43,7 +43,6 @@ const Homepage = () => {
                     alt={"Belo picture"}
                     style={{ width: "25%", height: "auto", border: '1px solid #E9D2D2'}}
                 />
-        
                 <TitleAndCaption/>
             </div>
         </div>

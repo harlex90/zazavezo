@@ -10,6 +10,7 @@ import Objectifs from "./components/Objectifs";
 import Realisations from "./components/Realisations";
 import Contribuer from "./components/Contribuer";
 import Apropos from "./components/Apropos";
+import PhonePopUp from "./components/PhonePopUp";
 
 function Router() { 
   return (
