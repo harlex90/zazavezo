@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 const TitleAndCaption = () => {
     return(
-        <div className="flex gap-44">
+        <div className="flex flex-col md:flex-row md:gap-44">
             <div className="flex flex-col">
                 <div>
                     <span style={{fontSize: "6rem", fontWeight:"normal", opacity: "0.9"}}>
