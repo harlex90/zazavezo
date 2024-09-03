@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const listNavElements = navElements.map(element =>
     <li key={element.id}>
-        <Link to={element.link} className="flex no-underline hover:underline font-bold text-[#01021A] text-center">
+        <Link to={element.link} className="no-underline hover:underline font-bold text-[#01021A] text-center">
             {element.title}
         </Link>
     </li>

@@ -4,7 +4,7 @@ import instagramIcon from "../assets/instagramIcon.png";
 import facebookIcon from "../assets/facebookIcon.png";
 import { Link } from "react-router-dom";
 import React from "react";
-import PhonePopUp from "./PhonePopUp";
+import PhonePopUp from "../views/PhonePopUp";
 
 const PhoneComponent = () => {
     const [clicked, setClicked] = React.useState(false);

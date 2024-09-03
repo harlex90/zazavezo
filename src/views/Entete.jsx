@@ -1,7 +1,8 @@
 import beloboatTry2 from "../assets/beloboatTry2.jpg";
 import assochildren from "../assets/assochildren.jpg";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 
 const TitleAndCaption = () => {
@@ -28,6 +29,9 @@ const TitleAndCaption = () => {
                         Faire un don
                     </div>
                 </button>
+                    {/* <Link to="/test">
+                        Test
+                    </Link> */}
             </div>
         </div>
     )

@@ -1,7 +1,6 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import beloboatOP from "../assets/beloboatOP.jpg";
-import molky from "../assets/molky.jpg";
 import sucettesmaisonCropped from "../assets/sucettesmaisonCropped.jpg";
 import poissons from "../assets/poissons.jpg";
 
