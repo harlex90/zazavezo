@@ -7,13 +7,13 @@ import construction from "../assets/construction.jpg";
 
 const Content = () => {
     return(
-        <div className="flex flex-col grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)]" style={{backgroundImage: `url(${beloboatOP})`}}>
+        <div className="flex flex-col grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)] pb-10" style={{backgroundImage: `url(${beloboatOP})`}}>
             <div className=" flex justify-center m-[50px]">
                 <h1>NOS RÉALISATIONS</h1>
             </div>
-            <div className="flex flex-col">
-                <div className="flex justify-center items-center">
-                    <ul className="list-disc w-1/2">
+            <div className="flex flex-col md:mx-[15%] gap-8 mx-10">
+                <div className="flex flex-col md:flex-row gap-8 justify-between items-center">
+                    <ul className="list-disc">
                         <li>1 école primaire publique (EPP) de Grande section maternelle au Cours moyen seconde année,
                             Au total près de 500 enfants dont 30 en maternelle.</li>
 
@@ -27,16 +27,16 @@ const Content = () => {
                     <img
                         src={bibliotheque}
                         alt={"Belo picture"}
-                        style={{ display: "flex", width: "20%", height: "auto", border: '1px solid #E9D2D2'}}
+                        style={{ display: "flex", width: "300px", height: "auto", border: '1px solid #E9D2D2'}}
                     />
                 </div>
-                <div className="flex justify-center items-center gap-11">
+                <div className="flex flex-col-reverse md:flex-row gap-8 justify-between items-center">
                     <img
                         src={construction}
                         alt={"Belo picture"}
-                        style={{ display: "flex", width: "20%", height: "auto", border: '1px solid #E9D2D2'}}
+                        style={{ display: "flex", width: "300px", height: "auto", border: '1px solid #E9D2D2'}}
                     />
-                    <ul className="list-disc w-1/2">
+                    <ul className="list-disc">
                         <li>Un éducateur a été recruté auprès du Cisco (équivalent de notre éducation nationale)</li>
                         <li>Entre le 8 juin et le 24 juin la clôture, la case et les toilettes ont été réalisées</li>
                         <li>Création d’un potager: cocos et graines diverses (don de Kokopelli France)</li>

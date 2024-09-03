@@ -22,7 +22,6 @@ function Router() {
       <Route path="/realisations" element={<Realisations/>}/>
       <Route path="/contribuer" element={<Contribuer/>}/>
       <Route path="/apropos" element={<Apropos/>}/>
-      {/* <Route path="/test" element={<TestTitleAndNavbar/>}/> */}
     </Routes>
   </BrowserRouter>
   )

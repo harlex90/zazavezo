@@ -5,7 +5,7 @@ import beloboatOP from "../assets/beloboatOP.jpg";
 
 const Content = () => {
     return(
-        <div className="flex flex-col items-center grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)]" style={{backgroundImage: `url(${beloboatOP})`}}>
+        <div className="flex flex-col items-center grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)] pb-10" style={{backgroundImage: `url(${beloboatOP})`}}>
             <div className="m-[50px]">
                 <h1>BELO-SUR-MER</h1>
             </div>
