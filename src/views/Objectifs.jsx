@@ -5,9 +5,15 @@ import sucettesmaisonCropped from "../assets/sucettesmaisonCropped.jpg";
 import poissons from "../assets/poissons.jpg";
 
 
+
+
 const Content = () => {
+
+
     return(
         <div className="flex flex-col items-center grow bg-no-repeat bg-cover bg-[left_calc(0%)_top_calc(70%)] pb-10" style={{backgroundImage: `url(${beloboatOP})`}}>
+            {myValue}
+            <input value={text} onChange={(e) => setText(e.currentTarget.value)} />
             <div className="m-[50px]">
                 <h1> LES OBJECTIFS DE L'ASSO:</h1>
             </div>
